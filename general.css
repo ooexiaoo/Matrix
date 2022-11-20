@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    background-color:  rgb(0, 0, 0);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'VT323', monospace;
+  color: white;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+section{
+  margin-bottom: 50px;
+}
