@@ -40,30 +40,18 @@
     width: 100%;
     height: 4px;
     border-radius:5px;
-<<<<<<< HEAD
-    background-color: rgb(211, 4, 176);
-    transition: 0.2s ease-out;
-  }
-  .toggle .line1 {
-    background-color: #b80505;
-=======
     background-color: #fff;
     transition: 0.2s ease-out;
   }
   .toggle .line1 {
     background-color: #000;
->>>>>>> 2942e0d (minor changes)
     transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
   }
   .toggle .line2 {
     display: none;
   }
   .toggle .line3 {
-<<<<<<< HEAD
-    background-color: #b80505;
-=======
     background-color: #000;
->>>>>>> 2942e0d (minor changes)
     transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
   }
   
@@ -80,11 +68,7 @@
     padding: 1rem 0;
   }
   .nav-link {
-<<<<<<< HEAD
-    color: yellow;
-=======
     color: #fff;
->>>>>>> 2942e0d (minor changes)
     font-size: 2.2rem;
     text-decoration: none;
     position: relative;
@@ -98,11 +82,7 @@
     bottom: 0;
     width: 100%;
     height: 2px;
-<<<<<<< HEAD
-    background-color: rgb(238, 4, 218);
-=======
     background-color: #fff;
->>>>>>> 2942e0d (minor changes)
     transform: scaleX(0);
     transition: 0.4s ease-in-out;
     transform-origin: left;
