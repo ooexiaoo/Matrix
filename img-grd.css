@@ -16,13 +16,15 @@
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    border: 1px solid #fff;
+    filter: saturate(0);
+    /* border: 1px solid #fff; */
 }
 .pictures:hover{
   transform: translateY(-5px);
   transition: 0.25s;
-  border: 10px solid;
+  border: 15px solid;
   border-image-source: url(/img/plus.png);
+  filter: saturate(2);
  /*  border-color: #fff;
   border-style: solid;
   border-width: 1px;  */

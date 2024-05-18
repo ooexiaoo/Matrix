@@ -20,14 +20,21 @@
     text-align: center;
     margin-bottom: 25px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .content h1{
-    font-size: 100px;
+    font-size: 10rem;
     color: white;
     font-weight: bold;
     transition: 1s;
     margin: 0;
     font-weight: 400;
+    max-width: 650px;
+    border: 15px solid;
+    border-image-source: url(/img/plus.png);
 }
 .content h1:hover{
     -webkit-text-stroke: 3px #fff;
@@ -43,19 +50,18 @@
 .button{
     padding: 10px 20px 10px 20px;
     font-size: 32px;
-    border: 2px solid #fff;
+    border: 15px solid transparent;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-    border-radius: 50px;
     font-weight: 400;
     transition: 1s;
     cursor: pointer;
     margin: 0;
 }
 .button:hover{
-    background-color: rgba(0, 0, 0, 0.8);
     color: gray;
-    border: 2px solid gray;
+    border: 15px solid #fff;
+    border-image-source: url(/img/plus.png);
 }
 .text{
   display: flex;
