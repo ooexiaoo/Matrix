@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="general.css">  
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="img-grd.css">
+    <link rel="stylesheet" href="toha.css">
     <title>THI</title>
     <link rel="icon" type="image/ico" href="/img/favicon.ico">
 </head>
@@ -43,6 +44,38 @@
         <h1>TOHA HEAVY INDUSTRIES</h1>
         <button class="button">LOGIN</button>
     </div>
+        <div class="containerm">
+            <div class="communications">
+                <h2>COMMUNICATIONS</h2>
+                <div class="messages">
+                    <h3>Messages</h3>
+                    <ul>
+                        <li>Unread Messages: <span id="unread-messages">0</span></li>
+                        <li>Read Messages: <span id="read-messages">0</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="date">
+                <h2>DATE</h2>
+                <p id="current-date">Loading...</p>
+            </div>
+            <div class="sector">
+                <h2>SECTOR</h2>
+                <p>Latitude: <span id="latitude">0.00</span></p>
+                <p>Longitude: <span id="longitude">0.00</span></p>
+            </div>
+            <div class="threat">
+                <h2>THREAT</h2>
+                <ul id="threat-list">
+                    <li>Loading...</li>
+                </ul>
+            </div>
+            <div class="terminal-access">
+                <h2>TERMINAL ACCESS</h2>
+                <input type="text" id="command-input" placeholder="Enter command...">
+                <button id="execute-command">Execute</button>
+            </div>
+        </div>
     <section class="text">
         <h2>WHO ARE WE?</h2>
         <p class="para">Toha Heavy Industries is a cutting-edge technology and engineering company<br>
@@ -51,19 +84,8 @@
           infrastructure, and medical sectors, enhancing human capabilities and<br>
           revolutionizing industry standards globally.</p>
     </section>
-    <div class="grid-master">
-        <img class="pictures" src="/img/ERGO PROXY.webp" alt="ERGO PROXY">
-        <img class="pictures" src="/img/giphy.webp" alt="Giphy">
-        <img class="pictures" src="/img/giphy (1).webp" alt="Giphy 1">
-        <img class="pictures" src="/img/ghost-in-the-shell-movie-800x450.jpg" alt="Ghost in the Shell Movie">
-        <img class="pictures" src="/img/wp1843941-ghost-in-the-shell-wallpapers.jpg" alt="Ghost in the Shell Wallpapers">
-        <img class="pictures" src="/img/wp1843940-ghost-in-the-shell-wallpapers.jpg" alt="Ghost in the Shell Wallpapers">
-        <img class="pictures" src="/img/wp1843957-ghost-in-the-shell-wallpapers.jpg" alt="Ghost in the Shell Wallpapers">
-        <img class="pictures" src="/img/wp1843981-ghost-in-the-shell-wallpapers.jpg" alt="Ghost in the Shell Wallpapers">
-        <img class="pictures" src="/img/05e4008595aecdc1fbafe42cdaa05b096150d4b3_hq.gif" alt="GIF 1">
-        <img class="pictures" src="/img/ghost-in-the-shell-1995-gif-6.gif" alt="Ghost in the Shell GIF">
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="nav.js"></script>
+    <script src="toha.js"></script>
 </body>
 </html>
