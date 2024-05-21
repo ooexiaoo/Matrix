@@ -1,17 +1,32 @@
+.max{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .containerm {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     padding: 20px;
     z-index: 0;
+    max-width: 1920px;
+    align-items: center;
 }
 
 .containerm > div {
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.82);
     padding: 20px;
     border: 15px solid transparent;
     transition: all 0.4s ease-in;
     z-index: 0;
+    max-width: 300px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerm > div:hover{
@@ -21,13 +36,15 @@
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 10px;
+    font-weight: 900;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 10px;
+    font-weight: 800;
 }
 
 ul {
@@ -36,16 +53,25 @@ ul {
 }
 
 li {
+    font-size: 1.2em;
     margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 input[type="text"] {
     width: calc(100% - 80px);
     padding: 8px;
     margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
 }
 
-#execute-command {
+#execute-command,
+#start-operation,
+.button {
     font-size: 15px;
     border: 10px solid transparent;
     background-color: rgba(0, 0, 0, 0);
@@ -57,7 +83,9 @@ input[type="text"] {
     transition: 0.4s ease-in;
 }
 
-#execute-command:hover{
+#execute-command:hover,
+#start-operation:hover,
+.button:hover{
     color: gray;
     border: 10px solid #fff;
     border-image-source: url(/img/plus.png);
@@ -66,4 +94,16 @@ input[type="text"] {
 #threat-list {
     max-height: 100px;
     overflow-y: auto;
+}
+
+@media screen and (max-width: 768px){
+    .containerm {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .containerm {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

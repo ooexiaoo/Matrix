@@ -35,6 +35,7 @@
                         <li class="nav-list-item"><a href="#" class="nav-link">THREAT</a></li>
                         <li class="nav-list-item"><a href="#" class="nav-link">NAVIGATION</a></li>
                         <li class="nav-list-item"><a href="#" class="nav-link">MESSAGES</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-link">ABOUT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,32 +43,34 @@
     </section>
     <div class="content">
         <h1>TOHA HEAVY INDUSTRIES</h1>
-        <button class="button">LOGIN</button>
     </div>
+    <div class="max">
         <div class="containerm">
             <div class="communications">
                 <h2>COMMUNICATIONS</h2>
                 <div class="messages">
-                    <h3>Messages</h3>
+                    <!-- <h3>Messages</h3> -->
                     <ul>
                         <li>Unread Messages: <span id="unread-messages">0</span></li>
                         <li>Read Messages: <span id="read-messages">0</span></li>
                     </ul>
                 </div>
             </div>
-            <div class="date">
-                <h2>DATE</h2>
-                <p id="current-date">Loading...</p>
-            </div>
-            <div class="sector">
-                <h2>SECTOR</h2>
-                <p>Latitude: <span id="latitude">0.00</span></p>
-                <p>Longitude: <span id="longitude">0.00</span></p>
+            <div class="section date-sector">
+                <h2>DATE & SECTOR</h2>
+                <div class="date">
+                    <!-- <h3>Current Date</h3> -->
+                    <p id="current-date">Loading...</p>
+                </div>
+                <div class="sector">
+                    <!-- <h3>Sector Information</h3> -->
+                    <p>Latitude: <span id="latitude">0.00</span></p>
+                    <p>Longitude: <span id="longitude">0.00</span></p>
+                </div>
             </div>
             <div class="threat">
                 <h2>THREAT</h2>
                 <ul id="threat-list">
-                    <li>Loading...</li>
                 </ul>
             </div>
             <div class="terminal-access">
@@ -75,15 +78,42 @@
                 <input type="text" id="command-input" placeholder="Enter command...">
                 <button id="execute-command">Execute</button>
             </div>
+            <div class="section operations">
+                <h2>OPERATIONS</h2>
+                <p>Current Operation: <span id="current-operation">None</span></p>
+                <p>Operation Status: <span id="operation-status">Idle</span></p>
+                <button id="start-operation">Start Operation</button>
+            </div>
+            <div class="section resources">
+                <h2>RESOURCES</h2>
+                <ul>
+                    <li>Material: <span id="material">2530</span></li>
+                    <li>Energy: <span id="energy">9000+</span></li>
+                    <li>Personnel: <span id="personnel">200</span></li>
+                </ul>
+            </div>
+            <div class="section maintenance">
+                <h2>MAINTENANCE</h2>
+                <ul>
+                    <li>Systems Check: <span id="systems-check">Passed</span></li>
+                    <li>Last Maintenance: <span id="last-maintenance">Unknown</span></li>
+                    <li>Next Scheduled: <span id="next-scheduled">Pending</span></li>
+                </ul>
+            </div>
+            <div class="section intelligence">
+                <h2>INTELLIGENCE</h2>
+                <ul>
+                    <li>Surveillance Reports: <span id="surveillance-reports">18</span></li>
+                    <li>Recon Missions: <span id="recon-missions">5</span></li>
+                    <li>Data Breaches: <span id="data-breaches">0</span></li>
+                </ul>
+            </div>
+            <div class="login">
+                <button class="button">LOGIN</button>
+                <button class="button">LOCK</button>
+            </div>
         </div>
-    <section class="text">
-        <h2>WHO ARE WE?</h2>
-        <p class="para">Toha Heavy Industries is a cutting-edge technology and engineering company<br>
-          specializing in advanced robotics, cybernetic enhancements, and AI systems.<br>
-          Renowned for its innovation, the company pioneers solutions in defense,<br>
-          infrastructure, and medical sectors, enhancing human capabilities and<br>
-          revolutionizing industry standards globally.</p>
-    </section>
+        </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="nav.js"></script>
     <script src="toha.js"></script>

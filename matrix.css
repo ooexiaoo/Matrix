@@ -46,9 +46,9 @@
     border: none;
 }
 
-.button{
-    padding: 10px 20px 10px 20px;
-    font-size: 26px;
+/* .button{
+    padding: 10px;
+    font-size: 1.2em;
     border: 15px solid transparent;
     background-color: rgba(0, 0, 0, 0);
     color: white;
@@ -61,7 +61,7 @@
     color: gray;
     border: 15px solid #fff;
     border-image-source: url(/img/plus.png);
-}
+} */
 .text{
   display: flex;
   flex-direction: column;
