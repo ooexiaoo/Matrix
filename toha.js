@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('current-date').innerText = currentDate.toDateString();
 
     // Update sector (example values)
-    document.getElementById('latitude').innerText = '37.7749° N';
-    document.getElementById('longitude').innerText = '122.4194° W';
+    document.getElementById('latitude').innerText = '00.00';
+    document.getElementById('longitude').innerText = '00.00';
 
     // Update threat (example values)
     const threats = ['Gauna','Cyber attacks', 'Data breaches', 'System intrusions'];
