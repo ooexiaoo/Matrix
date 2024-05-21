@@ -46,14 +46,21 @@
     </div>
     <div class="max">
         <div class="containerm">
-            <div class="communications">
+            <div class="section communications">
                 <h2>COMMUNICATIONS</h2>
                 <div class="messages">
                     <!-- <h3>Messages</h3> -->
-                    <ul>
+                    <ul id="message-list">
                         <li>Unread Messages: <span id="unread-messages">0</span></li>
                         <li>Read Messages: <span id="read-messages">0</span></li>
                     </ul>
+                </div>
+                <div class="message-input">
+                    <input type="text" id="new-message" placeholder="Type your message...">
+                    <button id="send-message">Send</button>
+                </div>
+                <div id="messages-container">
+                    <!-- Messages will be displayed here -->
                 </div>
             </div>
             <div class="section date-sector">
@@ -66,6 +73,7 @@
                     <!-- <h3>Sector Information</h3> -->
                     <p>Latitude: <span id="latitude">0.00</span></p>
                     <p>Longitude: <span id="longitude">0.00</span></p>
+                    <button id="get-location">Get Location</button>
                 </div>
             </div>
             <div class="threat">

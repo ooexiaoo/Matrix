@@ -22,7 +22,7 @@
     transition: all 0.4s ease-in;
     z-index: 0;
     max-width: 300px;
-    height: 220px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +71,8 @@ input[type="text"] {
 
 #execute-command,
 #start-operation,
+#send-message,
+#get-location,
 .button {
     font-size: 15px;
     border: 10px solid transparent;
@@ -85,11 +87,57 @@ input[type="text"] {
 
 #execute-command:hover,
 #start-operation:hover,
+#send-message:hover,
+#get-location:hover,
 .button:hover{
     color: gray;
     border: 10px solid #fff;
     border-image-source: url(/img/plus.png);
 }
+
+.message-input {
+    margin-top: 10px;
+}
+
+#messages-container {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.message-container {
+  /*   display: flex; */
+    align-items: center;
+    margin-bottom: 5px;
+    overflow-x:calc(100% - 150px);
+    max-width: 200px;
+}
+
+.message-text {
+    flex-grow: 1;
+    max-width: calc(100% - 150px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.message-container span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 30px); /* Adjust the width to accommodate the delete button */
+}
+
+.message-container .delete-message {
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+}
+
+.message-container .read {
+    text-decoration: line-through;
+}
+
 
 #threat-list {
     max-height: 100px;
